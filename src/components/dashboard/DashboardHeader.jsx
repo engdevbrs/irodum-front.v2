@@ -267,7 +267,7 @@ export default function DashboardHeader() {
                     </li>
                     <li className="user_setting">
                     <img
-                            className="rounded-circle wa-xs"
+                            className="rounded-circle wa-xs object-fit-cover"
                             height={50}
                             width={50}
                             src={getPhotoUser !== "" && getPhotoUser !== undefined && getPhotoUser !== null ? getPhotoUser : "/images/team/fl-1.png"}

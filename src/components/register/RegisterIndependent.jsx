@@ -233,7 +233,7 @@ const handleChange2=(event)=>{
             </div>
           </div>
           <div className="row wow fadeInRight" data-wow-delay="300ms">
-            <div className="col-xl-6 mx-auto">
+            <div className="col-xl-6 col-lg-8 col-md-10 mx-auto">
               <div className="log-reg-form search-modal form-style1 bgc-white p50 p30-sm default-box-shadow1 bdrs12">
                 <div className="mb30">
                   <h4>¡Creemos tu cuenta!</h4>

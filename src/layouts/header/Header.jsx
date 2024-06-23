@@ -1,8 +1,8 @@
 import { Link, Outlet, useLocation } from "react-router-dom";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
-import headerlogo2 from '../../images/header-logo2.svg'
-import headerlogo from '../../images/header-logo.svg'
+import headerlogo2 from '../../images/icon/iconheader.png'
+import headerlogo from '../../images/icon/icon.png'
 import useStickyMenu from "../../hook/useStickyMenu"
 import BottomToTop from "../../utils/BottomToTop";
 import Footer from "../footer/Footer";
@@ -43,23 +43,22 @@ const Header =()=> {
               <div className="row align-items-center justify-content-between">
                 <div className="col-auto px-0">
                   <div className="d-flex align-items-center justify-content-between">
-                    <div className="logos br-white-light pr30 pr5-xl">
-                      <Link className="header-logo logo1" to="/">
+                    <div className="logos br-white-light pr30 pr5">
+                      {
+                        pathname !== "/" ? <Link className="header-logo logo2" to="/">
                         <img
                           height={40}
-                          width={133}
+                          src={headerlogo2}
+                          alt="Header Logo"
+                        />
+                      </Link> : <Link className="header-logo logo1" to="/">
+                        <img
+                          height={40}
                           src={headerlogo}
                           alt="Header Logo"
                         />
                       </Link>
-                      <Link className="header-logo logo2" to="/">
-                        <img
-                          height={40}
-                          width={133}
-                          src={headerlogo2}
-                          alt="Header Logo"
-                        />
-                      </Link>
+                      }
                     </div>
                   </div>
                 </div>
@@ -67,21 +66,14 @@ const Header =()=> {
                   <div className="d-flex align-items-center">
                     <Navigation />
                     <a
-                      className="login-info bdrl1 pl15-lg pl30"
+                      className="login-info bdrl1 pl15 pr15"
                       data-bs-toggle="modal"
                       href="#exampleModalToggle"
                     >
                       <span className="flaticon-loupe" />
                     </a>
                     <Link
-                      className={`login-info mx15-lg mx30`}
-                      to="/registrarse"
-                    >
-                      <span className="d-none d-xl-inline-block">Comenzar</span>{" "}
-                      Ahora
-                    </Link>
-                    <Link
-                      className={pathname === "/" ? `ud-btn btn-white add-joining` : `ud-btn btn-thm add-joining`}
+                      className="ud-btn btn-thm add-joining"
                       to="/login"
                     >
                       Entrar

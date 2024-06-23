@@ -41,8 +41,8 @@ export default function PopularServiceSlideCard({ data }) {
                   <SwiperSlide key={index}>
                     <img
                       height={245}
-                      width={329}
-                      className="w-100 h-100 object-fit-cover"
+                      width={245}
+                      className="w-100 object-fit-content"
                       src={`https://www.services.irodum.com/${item.originalname}`}
                       alt="thumbnail"
                     />
@@ -87,23 +87,22 @@ export default function PopularServiceSlideCard({ data }) {
           </div>
           <hr className="my-2" />
           <div className="list-meta d-flex justify-content-between align-items-center mt15">
-            <a>
+          <Link to={`/servicio/${data.idServices}`}>
               <span className="position-relative mr10">
                 <img
                   height={30}
                   width={30}
-                  className="rounded-circle object-fit-contain"
+                  className="rounded-circle object-fit-cover"
                   src={data.photoUser ? `https://www.services.irodum.com/api/images/${data.photoUser}` : perfil}
-                  alt="Freelancer Photo"
+                  alt="Freelancer"
                 />
-                <span className="online-badge" />
               </span>
               <span className="fz14">{data.nameUser}</span>
-            </a>
+              </Link>
             <div className="budget">
               <p className="mb-0 body-color">
-                Precio desde
-                <span className="fz17 fw500 dark-color ms-1">
+                Precio desde: 
+                <span className="fz15 fw500 dark-color ms-1">
                   ${infoService.pricebasic}
                 </span>
               </p>

@@ -21,9 +21,9 @@ export default function DashboardNavigation() {
           </button>
           <ul className={`dropdown-content ${isActive ? "show" : ""}`}>
             <li>
-              <p className="fz15 fw400 ff-heading mt30 pl30">Start</p>
+              <p className="fz15 fw400 ff-heading mt30 pl30">Panel de Administración</p>
             </li>
-            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(0, 8).map((item,i) => (
+            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(0, 6).map((item,i) => (
               <li className={pathname === item.path ? 'mobile-dasboard-menu-active' : ''} onClick={() => setActive(false)} key={i}>
                 <Link to={item.path}>
                   <i className={`${item.icon} mr10`} />
@@ -36,7 +36,7 @@ export default function DashboardNavigation() {
               Organizar y gestionar
               </p>
             </li>
-            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(8, 13).map((item,i) => (
+            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(6, 8).map((item,i) => (
               <li className={pathname === item.path ? 'mobile-dasboard-menu-active' : ''}  onClick={() => setActive(false)} key={i}>
                 <Link to={item.path}>
                   <i className={`${item.icon} mr10`} />
@@ -47,7 +47,7 @@ export default function DashboardNavigation() {
             <li>
               <p className="fz15 fw400 ff-heading mt30 pl30">Account</p>
             </li>
-            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(13, 15).map((item,i) => (
+            {(userType === "independiente" ? DashboardNavigationFreelancer : DashboardNavigationHiring).slice(8, 10).map((item,i) => (
               <li className={pathname === item.path ? 'mobile-dasboard-menu-active' : ''}  onClick={() => setActive(false)} key={i}>
                 <Link to={item.path}>
                   <i className={`${item.icon} mr10`} />

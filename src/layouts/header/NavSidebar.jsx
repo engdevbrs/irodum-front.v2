@@ -1,6 +1,7 @@
 import { useRef } from "react";
-import navigation from '../../data/navigation'
+import { mobilemenu } from '../../data/navigation'
 import { Sidebar, Menu, MenuItem, SubMenu } from "react-pro-sidebar";
+import headerlogo3 from '../../images/icon/iconheader.png'
 import { Link, useLocation } from "react-router-dom";
 import { isActiveNavigation } from "../../utils/isActiveNavigation";
 
@@ -23,9 +24,8 @@ export default function NavSidebar() {
           <Link to="/">
             <img
               alt="Header Logo"
-              width="133"
-              height="40"
-              src="/images/header-logo2.svg"
+              height={40}
+              src={headerlogo3}
             />
           </Link>
           <button
@@ -40,7 +40,7 @@ export default function NavSidebar() {
           <div className="ui-navigation-sidebar">
             <Sidebar>
               <Menu>
-                {navigation.map((item,i) =>
+                {mobilemenu.map((item,i) =>
                   item?.children ? (
                     <SubMenu
                       key={ i }

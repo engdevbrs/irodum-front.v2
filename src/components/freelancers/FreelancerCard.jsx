@@ -14,9 +14,9 @@ export default function FreelancerCard({ data }) {
           <div className="d-lg-flex bdrr1 bdrn-lg">
             <div className="thumb w90 position-relative rounded-circle mb15-md">
               <img
-                height={90}
-                width={90}
-                className="rounded-circle mx-auto"
+                height={75}
+                width={75}
+                className="rounded-circle mx-auto object-fit-cover"
                 src={data.photoUser ? `https://www.services.irodum.com/api/images/${data.photoUser}` : freelancerimg}
                 alt="thumb"
               />

@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import about3 from "../images/about/about-3.png"
-import hiring from "../images/home/hiringhome.svg"
+import hiring from "../images/home/hiringhome.png"
 
 export default function OurCta() {
 
@@ -18,15 +17,15 @@ export default function OurCta() {
                 Encuentre el talento necesario para hacer crecer su negocio.
                 </h2>
                 <p className="cta-text">
-                  Anuncie sus trabajos a miles de usuarios mensuales y reciba 
-                  cientos de propuestas.
+                  Anuncie sus trabajos a miles de usuarios y reciba 
+                  cientos de propuestas laborales.
                 </p>
                 <Link to="/registro/hiring" className="ud-btn btn-thm2">
                   Empezar Hoy <i className="fal fa-arrow-right-long" />
                 </Link>
               </div>
             </div>
-            <div className="col-md-6 col-lg-5 col-xl-5 position-relative wow zoomIn">
+            <div className="col-md-6 col-lg-5 col-xl-5 position-relative">
               <div className="cta-img">
                 <img
                   height={489}

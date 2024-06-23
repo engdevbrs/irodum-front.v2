@@ -12,22 +12,22 @@ export default function Footer() {
             <div className="col-lg-6">
               <div className="footer-widget mb-4 mb-lg-5">
                 <div className="mailchimp-widget mb90">
-                  <h6 className="title text-white mb20">Subscribe</h6>
+                  <h6 className="title text-white mb20">Subscríbete</h6>
                   <div className="mailchimp-style1 at-home9 bdrs60 overflow-hidden">
                     <input
                       type="email"
                       className="form-control"
-                      placeholder="Your email address"
+                      placeholder="Tu dirección de correo"
                     />
                     <button className="text-thm" type="submit">
-                      Send
+                      Enviar
                     </button>
                   </div>
                 </div>
                 <div className="row justify-content-between">
                   <div className="col-auto">
                     <div className="link-style1 mb-3">
-                      <h6 className="text-white mb25">About</h6>
+                      <h6 className="text-white mb25">Acerca de</h6>
                       <div className="link-list">
                         {about.map((item,i) => (
                           <Link key={ i } to={item.path}>
@@ -39,7 +39,7 @@ export default function Footer() {
                   </div>
                   <div className="col-auto">
                     <div className="link-style1 mb-3">
-                      <h6 className="text-white mb25">Categories</h6>
+                      <h6 className="text-white mb25">Categorías</h6>
                       <ul className="ps-0">
                         {category.map((item,i) => (
                           <li key={ i }>
@@ -51,7 +51,7 @@ export default function Footer() {
                   </div>
                   <div className="col-auto">
                     <div className="link-style1 mb-3">
-                      <h6 className="text-white mb25">Support</h6>
+                      <h6 className="text-white mb25">Ayuda</h6>
                       <ul className="ps-0">
                         {support.map((item,i) => (
                           <li key={ i }>
@@ -78,27 +78,27 @@ export default function Footer() {
                 <div className="row mb-4 mb-lg-5">
                   <div className="col-auto">
                     <div className="contact-info">
-                      <p className="info-title mb-2">Toll Free Customer Care</p>
+                      <p className="info-title mb-2">Puedes llamarnos directamente a</p>
                       <h5 className="info-phone">
                         <a className="text-white" href="#">
-                          +(1) 123 456 7890
+                          +(569) 93158746
                         </a>
                       </h5>
                     </div>
                   </div>
                   <div className="col-auto">
                     <div className="contact-info">
-                      <p className="info-title mb-2">Need live support?</p>
+                      <p className="info-title mb-2">Necesitas ayuda?</p>
                       <h5 className="info-mail">
                         <a className="text-white" href="mailto:hi@Irodum.com">
-                          hi@Irodum.com
+                          soporte@irodum.com
                         </a>
                       </h5>
                     </div>
                   </div>
                 </div>
                 <div className="app-widget at-home9">
-                  <h5 className="title text-white mb20">Apps</h5>
+                  <h5 className="title text-white mb20">Versión Móvil</h5>
                   <div className="row mb-4 mb-lg-5">
                     <div className="col-auto">
                       <a>
@@ -108,7 +108,7 @@ export default function Footer() {
                           </div>
                           <div className="flex-grow-1">
                             <p className="app-text text-white fz13 mb0">
-                              Download on the
+                              Obténlo en
                             </p>
                             <h6 className="app-title mb-1 text-white">
                               Apple Store
@@ -125,7 +125,7 @@ export default function Footer() {
                           </div>
                           <div className="flex-grow-1">
                             <p className="app-text text-white fz13 mb0">
-                              Get in on
+                              Descárgalo desde
                             </p>
                             <h6 className="app-title mb-1 text-white">
                               Google Play
@@ -146,7 +146,7 @@ export default function Footer() {
             <div className="col-sm-6">
               <div className="text-center text-lg-start">
                 <p className="copyright-text mb-2 mb-md-0 text-white-light ff-heading">
-                  © Copyright{" "}
+                  © Copyright{" "} |
                   <Link
                     to="https://www.engdevbrs.com"
                     target="_blank"

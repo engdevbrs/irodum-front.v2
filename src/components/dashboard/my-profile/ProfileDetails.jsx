@@ -198,7 +198,7 @@ export default function ProfileDetails(props) {
           if( sessionStorage.getItem('photoUser') !== null && sessionStorage.getItem('photoUser') !== "" && sessionStorage.getItem('photoUser') !== undefined){
             sessionStorage.removeItem('photoUser')
           }
-          sessionStorage.setItem('photoUser', "http://localhost:3001" + result.data.imagePath)
+          sessionStorage.setItem('photoUser', "https://www.services.irodum.com" + result.data.imagePath)
         }
     }).catch(error => {
       console.log(error);

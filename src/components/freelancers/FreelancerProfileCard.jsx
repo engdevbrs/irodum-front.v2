@@ -47,7 +47,7 @@ export default function FreelancerProfileCard({ data }) {
             <div className="budget">
               <p className="mb-0 body-color">
                 Precio desde
-                <span className="fz17 fw500 dark-color ms-1">
+                <span className="fz15 fw500 dark-color ms-1">
                   ${infoService.pricebasic}
                 </span>
               </p>

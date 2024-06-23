@@ -14,7 +14,7 @@ export default function ListingSidebarModal() {
     <>
       <div className="lefttside-hidden-bar">
         <div className="hsidebar-header bdrb1">
-          <h4 className="list-title">All filters</h4>
+          <h4 className="list-title">Filtros</h4>
           <div onClick={listingToggle} className="sidebar-close-icon">
             <span className="far fa-times" />
           </div>
@@ -34,7 +34,7 @@ export default function ListingSidebarModal() {
                         aria-expanded="false"
                         aria-controls="collapseZero"
                       >
-                        Delivery Time
+                        Tiempo de Entrega
                       </button>
                     </h4>
                   </div>
@@ -58,7 +58,7 @@ export default function ListingSidebarModal() {
                         aria-expanded="true"
                         aria-controls="collapseOnes"
                       >
-                        Budget
+                        Presupuesto
                       </button>
                     </h4>
                   </div>
@@ -71,7 +71,7 @@ export default function ListingSidebarModal() {
                     <BudgetOption />
                   </div>
                 </div>
-                <div className="card mb20 pb5 rounded-0">
+                {/* <div className="card mb20 pb5 rounded-0">
                   <div className="card-header" id="headingTwos">
                     <h4>
                       <button
@@ -94,7 +94,7 @@ export default function ListingSidebarModal() {
                   >
                     <DesignToolOption />
                   </div>
-                </div>
+                </div> */}
                 <div className="card mb20 pb5 rounded-0">
                   <div className="card-header" id="headingThrees">
                     <h4>
@@ -106,7 +106,7 @@ export default function ListingSidebarModal() {
                         aria-expanded="true"
                         aria-controls="collapseThrees"
                       >
-                        Location
+                        Ubicación
                       </button>
                     </h4>
                   </div>
@@ -119,7 +119,7 @@ export default function ListingSidebarModal() {
                     <LocationOption />
                   </div>
                 </div>
-                <div className="card mb20 pb5 rounded-0">
+                {/* <div className="card mb20 pb5 rounded-0">
                   <div className="card-header" id="headingFours">
                     <h4>
                       <button
@@ -134,8 +134,8 @@ export default function ListingSidebarModal() {
                       </button>
                     </h4>
                   </div>
-                </div>
-                <div className="card mb20 pb0 rounded-0">
+                </div> */}
+                {/* <div className="card mb20 pb0 rounded-0">
                   <div className="card-header" id="headingFives">
                     <h4>
                       <button
@@ -158,7 +158,7 @@ export default function ListingSidebarModal() {
                   >
                     <LevelOption />
                   </div>
-                </div>
+                </div> */}
               </div>
               <ClearButton />
             </div>

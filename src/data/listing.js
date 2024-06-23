@@ -1,8 +1,8 @@
 export const deliveryTime = [
-  { id: 1, title: "Express 24H", value: "24h", total: "1,945" },
-  { id: 2, title: "Up to 3 days", value: "3d", total: "8,136" },
-  { id: 3, title: "Up to 7 days", value: "7d", total: "917" },
-  { id: 4, title: "Anytime", value: "anytime", total: "240" },
+  { id: 1, title: "Rápido 24H", value: "24h", total: "1,945" },
+  { id: 2, title: "Hasta 3 días", value: "3d", total: "8,136" },
+  { id: 3, title: "Hasta 7 días", value: "7d", total: "917" },
+  { id: 4, title: "En cualquier momento", value: "anytime", total: "240" },
 ];
 
 export const level = [

@@ -11,13 +11,16 @@ export default function ServiceContactWidget(props) {
         <div className="wrapper d-flex align-items-center">
           <div className="thumb position-relative mb25">
             <img
-              height={60}
-              width={60}
-              className="rounded-circle mx-auto"
+              height={75}
+              width={75}
+              className="rounded-circle object-fit-cover"
               src={"https://www.services.irodum.com/api/images/" + infoservice.photoUser}
               alt="rounded-circle"
             />
-            <span className="online" />
+            <span className="online"/>
+            <p className="m0 text-center"><Link to={"/freelancer-perfil/"+ infoservice.idUser}>
+              Ver perfil
+            </Link></p>
           </div>
           <div className="ml20">
             <h5 className="title mb-1">{`${infoservice.nameUser} ${infoservice.LastNameUser}`}</h5>
@@ -35,44 +38,42 @@ export default function ServiceContactWidget(props) {
         <div className="details">
           <div className="fl-meta d-flex align-items-center justify-content-between">
             <a className="meta fw500 text-start">
-              Ciudad
-              <br />
-              <span className="fz14 fw400">{infoservice.cityUser}</span>
-            </a>
-            <a className="meta fw500 text-start">
-              Tarifa
+              <b>Tarifa</b>
               <br />
               <span className="fz14 fw400">{`$${infoservice.priceWork} / hr`}</span>
             </a>
             <a className="meta fw500 text-start">
-              Éxito laboral
+              <b>Tasa de éxito</b>
               <br />
-              <span className="fz14 fw400">%98</span>
+              <span className="fz14 fw400">98%</span>
             </a>
           </div>
         </div>
-        <hr class="opacity-100" />
+        <hr className="opacity-100" />
         <div className="d-flex justify-content-center">
         <div className="social-style1">
-            <a>
+            <a href="#">
               <i className="fab fa-facebook-f list-inline-item" />
             </a>
-            <a>
+            <a href="#">
               <i className="fab fa-twitter list-inline-item" />
             </a>
-            <a>
+            <a href="#">
               <i className="fab fa-instagram list-inline-item" />
             </a>
-            <a>
+            <a href="#">
               <i className="fab fa-linkedin-in list-inline-item" />
             </a>
           </div>
         </div>
-        <div className="d-grid mt20">
-          <Link to="/freelancer-single" className="ud-btn btn-thm-border">
-            Contactarme
+        <div className="d-grid">
+          <a className="ud-btn btn-thm"
+              id="request"
+              data-bs-toggle="modal"
+              data-bs-target="#serviceRequest">
+              Solicitar servicio
             <i className="fal fa-arrow-right-long" />
-          </Link>
+          </a>
         </div>
       </div>
     </>

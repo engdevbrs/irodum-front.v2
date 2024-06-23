@@ -59,18 +59,17 @@ export default function PopularServiceCard({ data, text1 = false }) {
                 <img
                   height={30}
                   width={30}
-                  className="rounded-circle object-fit-contain"
+                  className="rounded-circle object-fit-cover"
                   src={`https://www.services.irodum.com/${data.photoUser}`}
                   alt="Freelancer Photo"
                 />
-                <span className="online-badge" />
               </span>
               <span className="fz14">{data.nameUser}</span>
             </a>
             <div className="budget">
               <p className="mb-0 body-color">
                 Precio desde
-                <span className="fz17 fw500 dark-color ms-1">
+                <span className="fz15 fw500 dark-color ms-1">
                   ${infoService.pricebasic}
                 </span>
               </p>

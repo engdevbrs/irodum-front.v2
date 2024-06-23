@@ -19,29 +19,34 @@ import FreelancerMain from "./components/freelancers/FreelancerMain";
 import FreelancerProfile from "./components/freelancers/FreelancerProfile";
 import ReviewsMain from "./components/dashboard/reviews/ReviewsMain";
 import ManageJobsMain from "./components/dashboard/manage-jobs/ManageJobsMain";
+import PageNotFound from "./utils/PageNotFound";
+import TermsCondition1 from "./components/TermsCondition";
 
 const App = () => {
   return (
       <BrowserRouter>
           <Routes>
-              <Route path='' element= {<Header />}>
-                  <Route index element= { <Home /> } />
-                  <Route path="login" element= { <Login /> } />
-                  <Route path="registrarse" element= { <MainRegister /> } />
-                  <Route path="registro/freelancer" element= { <RegisterIndependent /> } />
-                  <Route path="registro/hiring" element= { <RegisterHiring /> } />
-                  <Route path="dashboard" element= { <DashboardMain /> } />
-                  <Route path="mi-perfil" element= { <ProfileMain /> } />
-                  <Route path="administrar-servicios" element= { <ManageServices /> } />
-                  <Route path="nuevo-servicio" element= { <AddServiceInfo /> } />
-                  <Route path="contacto" element= { <Contacto /> } />
-                  <Route path="servicios" element= { <ServicesMain /> } />
-                  <Route path="servicio/:id" element= { <ServiceSingle /> } />
-                  <Route path="proyectos" element= { <ProjectsMain /> } />
-                  <Route path="freelancers" element= { <FreelancerMain /> } />
-                  <Route path="freelancer-perfil/:id" element= { <FreelancerProfile /> } />
-                  <Route path="comentarios" element= { <ReviewsMain /> } />
-                  <Route path="propuestas-trabajos" element= { <ManageJobsMain /> } />
+                
+                <Route path='' element= {<Header />}>
+                    <Route path='*' element={<PageNotFound />} />
+                    <Route index element= { <Home /> } />
+                    <Route path="login" element= { <Login /> } />
+                    <Route path="registrarse" element= { <MainRegister /> } />
+                    <Route path="registro/freelancer" element= { <RegisterIndependent /> } />
+                    <Route path="registro/hiring" element= { <RegisterHiring /> } />
+                    <Route path="dashboard" element= { <DashboardMain /> } />
+                    <Route path="mi-perfil" element= { <ProfileMain /> } />
+                    <Route path="administrar-servicios" element= { <ManageServices /> } />
+                    <Route path="nuevo-servicio" element= { <AddServiceInfo /> } />
+                    <Route path="contacto" element= { <Contacto /> } />
+                    <Route path="servicios" element= { <ServicesMain /> } />
+                    <Route path="servicio/:id" element= { <ServiceSingle /> } />
+                    <Route path="proyectos" element= { <ProjectsMain /> } />
+                    <Route path="freelancers" element= { <FreelancerMain /> } />
+                    <Route path="freelancer-perfil/:id" element= { <FreelancerProfile /> } />
+                    <Route path="comentarios" element= { <ReviewsMain /> } />
+                    <Route path="propuestas-trabajos" element= { <ManageJobsMain /> } />
+                    <Route path="terminos-y-condiciones" element= { <TermsCondition1 /> } />
               </Route>
           </Routes>
       </BrowserRouter>

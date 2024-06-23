@@ -105,19 +105,18 @@ export default function FreelancerDetails(props) {
                     <div className="col-xl-12">
                       <div className="position-relative pl50 pl20-sm">
                         <div className="list-meta d-sm-flex align-items-center">
-                          <a
+                          <div
                             className="position-relative freelancer-single-style"
-                            href="#"
                           >
                             <span className="online"></span>
                             <img
-                              width={90}
-                              height={90}
-                              className="rounded-circle wa-sm mb15-sm"
+                              width={75}
+                              height={75}
+                              className="rounded-circle mb15-sm object-fit-cover"
                               src={photoUser !== "" && photoUser !== null && photoUser !== undefined ? `https://www.services.irodum.com/api/images/${photoUser}` : fl1}
                               alt="Freelancer User"
                             />
-                          </a>
+                          </div>
                           <div className="ml20 ml0-xs">
                             <h5 className="title mb-1">
                               {nameUser ? nameUser: "Sin nombre"}
@@ -125,7 +124,7 @@ export default function FreelancerDetails(props) {
                             <p className="mb-0">{workAreaUser}</p>
                             <p className="mb-0 dark-color fz15 fw500 list-inline-item mb5-sm">
                               <i className="fas fa-star vam fz10 review-color me-2"></i>{" "}
-                              4.82 94 reviews
+                              4.82 (94 reviews)
                             </p>
                             <p className="mb-0 dark-color fz15 fw500 list-inline-item ml15 mb5-sm ml0-xs">
                               <i className="flaticon-30-days vam fz20 me-2"></i>{" "}
@@ -144,7 +143,7 @@ export default function FreelancerDetails(props) {
                         <span className="flaticon-target" />
                       </div>
                       <div className="details">
-                        <h5 className="title">Job Success</h5>
+                        <h5 className="title">Tasa de Éxito</h5>
                         <p className="mb-0 text">98%</p>
                       </div>
                     </div>
@@ -155,7 +154,7 @@ export default function FreelancerDetails(props) {
                         <span className="flaticon-goal" />
                       </div>
                       <div className="details">
-                        <h5 className="title">Total Jobs</h5>
+                        <h5 className="title">Trabajos realizados</h5>
                         <p className="mb-0 text">921</p>
                       </div>
                     </div>
@@ -166,7 +165,7 @@ export default function FreelancerDetails(props) {
                         <span className="flaticon-fifteen" />
                       </div>
                       <div className="details">
-                        <h5 className="title">Total Hours</h5>
+                        <h5 className="title">Horas trabajadas</h5>
                         <p className="mb-0 text">1,499</p>
                       </div>
                     </div>
@@ -177,26 +176,39 @@ export default function FreelancerDetails(props) {
                         <span className="flaticon-file-1" />
                       </div>
                       <div className="details">
-                        <h5 className="title">In Queue Service</h5>
+                        <h5 className="title">Servicios activos</h5>
                         <p className="mb-0 text">20</p>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="service-about">
-                  <h4>Sobre Mí</h4>
+                  <h4 className="mb30">Sobre Mí</h4>
                   {
-                    workResume !== null ? workResume : <p className="text mb30">
+                    workResume !== null ? <p className="text mb30">{workResume}</p> : <p className="text mb30">
                     Es un hecho establecido desde hace mucho tiempo que un lector se distraerá con el contenido legible de una 
                     página cuando mire su diseño. El objetivo de utilizar Lorem Ipsum es que tiene una distribución de letras 
                     más o menos normal, en lugar de utilizar "Contenido aquí, contenido aquí", lo que hace que parezca un 
                     inglés legible.
                     </p>
                   }
+                  <hr className="mb60" />
+                  <div className="mb30 bdrs8">
+                      <h4 className="mb30">Mis Cualidades</h4>
+                      <div className="tag-list ">
+                        {
+                          skillsdata?.map((value,i)=>{
+                            return(
+                              <span className="tag mb10 mr5" key={i}>{value}</span>
+                            )
+                          })
+                        }
+                      </div>
+                  </div>
                   <EducationDetails dataeducation = {getFreelancerEducation} />
                   <WorkExperienceDetails dataworkexperience = {getFreelancerWorkExperiencie}/>
                   <CertificatesAwards />
-                  <hr className="opacity-100 mb60" />
+                  <hr className="mb60" />
 
                   <h4 className="mb30">Servicios Disponibles</h4>
                   <div className="row mb35">
@@ -220,42 +232,12 @@ export default function FreelancerDetails(props) {
                     {({ style }) => (
                       <div className="blog-sidebar ms-lg-auto" style={style}>
                         <FreelancerAbout infocard={infofreelancers}/>
-                        {
-                          skillsdata === null ? <></> :
-                        <div className="sidebar-widget mb30 pb20 bdrs8">
-                          <h4 className="widget-title">Mis Cualidades</h4>
-                          <div className="tag-list mt30">
-                            {
-                              skillsdata.map((value,i)=>{
-                                return(
-                                  <span className="tag mb10 mr5" key={i}>{value}</span>
-                                )
-                              })
-                            }
-                          </div>
-                        </div>
-                        }
                       </div>
                     )}
                   </Sticky>
                 ) : (
                   <div className="blog-sidebar ms-lg-auto">
                     <FreelancerAbout infocard={infofreelancers}/>
-                    {
-                      skillsdata === null ? <></> :
-                        <div className="sidebar-widget mb30 pb20 bdrs8">
-                          <h4 className="widget-title">Mis Cualidades</h4>
-                          <div className="tag-list mt30">
-                            {
-                              skillsdata.map((value,i)=>{
-                                return(
-                                  <span className="tag mb10 mr5" key={i}>{value}</span>
-                                )
-                              })
-                            }
-                          </div>
-                        </div>
-                    }
                   </div>
                 )}
               </div>

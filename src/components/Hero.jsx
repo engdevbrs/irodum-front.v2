@@ -2,7 +2,7 @@ import { useState } from "react";
 import CountUp from "react-countup";
 import { useNavigate } from "react-router-dom";
 import HeroSearch from "./HeroSearch";
-import about1 from "../images/about/about-1.png"
+import about1 from "../images/home/home1.png"
 import datajobs from "../data/job"
 
 const { categoriesServices } = datajobs
@@ -41,12 +41,12 @@ const Hero = () => {
                 </p>
                 <div className="advance-search-tab bgc-white p10 bdrs4-sm bdrs60 banner-btn position-relative zi1 animate-up-3 mt30">
                   <div className="row">
-                    <div className="col-md-5 col-lg-6 col-xl-6">
-                      <div className="advance-search-field mb10-sm">
+                    <div className="col-8">
+                      <div className="advance-search-field">
                         <HeroSearch />
                       </div>
                     </div>
-                    <div className="col-md-4 col-lg-4 col-xl-3">
+                    {/* <div className="col-md-4 col-lg-4 col-xl-3">
                       <div className="bselect-style1 bdrl1 bdrn-sm">
                         <div className="dropdown bootstrap-select">
                           <button
@@ -87,8 +87,8 @@ const Hero = () => {
                           </div>
                         </div>
                       </div>
-                    </div>
-                    <div className="col-md-3 col-lg-2 col-xl-3">
+                    </div> */}
+                    <div className="col-4 d-grid align-items-center">
                       <div className="text-center text-xl-start">
                         <button
                           onClick={searchHandler}
@@ -182,15 +182,15 @@ const Hero = () => {
                 <div className="iconbox-small1 d-none d-xl-flex wow fadeInRight default-box-shadow4 bounce-x animate-up-1">
                   <span className="icon flaticon-review" />
                   <div className="details pl20">
-                    <h6 className="mb-1">Prueba de calidad</h6>
-                    <p className="text fz13 mb-0">Lorem Ipsum Dolar Amet</p>
+                    <h6 className="mb-1">Servicios de calidad</h6>
+                    <p className="text fz13 mb-0">Trabajadores cualificados</p>
                   </div>
                 </div>
                 <div className="iconbox-small2 d-none d-xl-flex wow fadeInLeft default-box-shadow4 bounce-y animate-up-2">
                   <span className="icon flaticon-review" />
                   <div className="details pl20">
                     <h6 className="mb-1">Seguro y protegido</h6>
-                    <p className="text fz13 mb-0">Lorem Ipsum Dolar Amet</p>
+                    <p className="text fz13 mb-0">Protegemos tus datos</p>
                   </div>
                 </div>
               </div>

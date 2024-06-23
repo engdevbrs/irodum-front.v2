@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import menus from "../../data/navigation";
+import { menus } from "../../data/navigation";
 import { isActiveNavigation } from "../../utils/isActiveNavigation";
 
 export default function Navigation() {

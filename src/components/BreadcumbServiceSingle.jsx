@@ -1,6 +1,6 @@
 import lefttop from "../images/vector-img/left-top.png"
 import rightbot from "../images/vector-img/right-bottom.png"
-import vectorservice from "../images/vector-img/vector-service-v1.png"
+import vectorservice from "../images/vector-img/services-profile.png"
 
 export default function BreadcumbServiceSingle(props) {
 
@@ -38,14 +38,14 @@ export default function BreadcumbServiceSingle(props) {
                 <h2>{infoservice.titlebasic}</h2>
                 <h6><q>{ infouser.slogan !== "" && infouser.slogan !== null ? infouser.slogan : <></>}</q></h6>
                   <div className="list-meta mt30">
-                    <p className="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
+                    <p className="mb-0 dark-color fz16 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
                       <i className="fas fa-star vam fz10 review-color me-2" />
-                      {`${infouser.rankingUser} evaluación`}
+                      {`${infouser.ratingService !== null && infouser.ratingService !== undefined ? infouser.ratingService : 'El servicio aun no ha sido calificado'}`}
                     </p>
-                    <p className="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
+                    <p className="mb-0 dark-color fz16 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
                       <i className="flaticon-file-1 vam fz20 me-2" />2 Órdenes en total
                     </p>
-                    <p className="mb-0 dark-color fz14 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
+                    <p className="mb-0 dark-color fz16 list-inline-item ml25 ml15-sm mb5-sm ml0-xs">
                       <i className="flaticon-calendar vam fz20 me-2" />
                       {`Miembro desde: ${infouser.registerDay}`}
                     </p>

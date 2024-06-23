@@ -1,29 +1,26 @@
 export const about = [
-  { id: 1, name: "Careers", path: "/" },
-  { id: 2, name: "Press & News", path: "/" },
-  { id: 3, name: "Partnerships", path: "/" },
-  { id: 4, name: "Privacy Policy", path: "/" },
-  { id: 5, name: "Terms of Service", path: "/" },
-  { id: 6, name: "Investor Relations", path: "/" },
+  { id: 1, name: "Servicios", path: "/" },
+  { id: 2, name: "Sobre nosotros", path: "/" },
+  { id: 3, name: "Colaboradores", path: "/" },
+  { id: 4, name: "Políticas de privacidad", path: "/" },
+  { id: 5, name: "Términos y condiciones", path: "/terminos-y-condiciones" },
 ];
 
 export const category = [
-  { id: 1, name: "Graphics & Design", path: "/" },
-  { id: 2, name: "Digital Marketing", path: "/" },
-  { id: 3, name: "Writing & Translation", path: "/" },
-  { id: 4, name: "Video & Animation", path: "/" },
-  { id: 5, name: "Music & Audio", path: "/" },
-  { id: 6, name: "Programming & Tech", path: "/" },
-  { id: 7, name: "Data", path: "/" },
-  { id: 8, name: "Business", path: "/" },
-  { id: 9, name: "Lifestyle", path: "/" },
+  { id: 1, name: "Programación & Tecnología", path: "/" },
+  { id: 2, name: "Diseño & Creatividad", path: "/" },
+  { id: 3, name: "Marketing Digital", path: "/" },
+  { id: 4, name: "Escritura & Traducción", path: "/" },
+  { id: 5, name: "Música & Audio", path: "/" },
+  { id: 6, name: "Video & Animación", path: "/" },
+  { id: 7, name: "Construcción & Reparación", path: "/" },
+  { id: 8, name: "Electricidad", path: "/" },
 ];
 
 export const support = [
-  { id: 1, name: "Help & Support", path: "/" },
-  { id: 2, name: "Trust & Safety", path: "/" },
-  { id: 3, name: "Selling on Irodum", path: "/" },
-  { id: 4, name: "Buying on Irodum", path: "/" },
+  { id: 1, name: "Ayuda", path: "/" },
+  { id: 2, name: "Contacto", path: "/" },
+  { id: 3, name: "Preguntas Frecuentes", path: "/" },
 ];
 
 export const momney = ["US$ USD", "Euro", "Pound"];

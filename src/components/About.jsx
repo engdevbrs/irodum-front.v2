@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import about1 from "../images/about/about-1.png"
-import happyclient from "../images/about/happy-client-1.png"
+import about1 from "../images/about/aboutone.png"
+import happyclient from "../images/about/happy-client-2.png"
 
 export default function About() {
   return (
@@ -14,7 +14,7 @@ export default function About() {
                   <span className="icon flaticon-review" />
                   <div className="details">
                     <h6>4.5/5</h6>
-                    <p className="text fz13 mb-0">Los clientes valoran a los profesionales</p>
+                    <p className="text fz13 mb-0">Los clientes valoran a los trabajadores</p>
                   </div>
                 </div>
                 <div className="iconbox-small2 d-none d-md-block wow fadeInLeft">
@@ -25,22 +25,19 @@ export default function About() {
                   </div>
                 </div>
                 <div
-                  className="about-img wow fadeInRight"
+                  className="about-img wow fadeInRight d-sm-flex justify-content-sm-center"
                   data-wow-delay="300ms"
                 >
                   <img
-                    height={574}
-                    width={691}
-                    className="w100 object-fit-contain"
+                  width={532}
                     src={about1}
                     alt="object"
                   />
                 </div>
                 <div className="imgbox-1 default-box-shadow1 text-center wow fadeInUp">
                   <img
-                    height={68}
-                    width={362}
-                    className="img-1 bounce-y w-f"
+                    width={300}
+                    className="img-1 bounce-y"
                     src={happyclient}
                     alt="object"
                   />
@@ -69,8 +66,7 @@ export default function About() {
                     </li>
                     <li>
                       <i className="far fa-check" />
-                      Encuentre el talento perfecto gracias al éxito de un cliente
-                      gerente
+                      Encuentre el talento perfecto gracias al éxito laboral del trabajador
                     </li>
                     <li>
                       <i className="far fa-check" />

@@ -1,12 +1,16 @@
 import { useState } from "react";
 
 const searchResult = [
-  "mobile app development",
-  "mobile app builder",
-  "mobile legends",
-  "mobile app ui ux design",
-  "mobile game app development",
-  "mobile app design",
+  "Carpintero",
+  "Instalaciones eléctricas",
+  "Soldador",
+  "Gasfiter",
+  "Atencion al cliente",
+  "Cuidador de adultos",
+  "Eventos y decoración",
+  "Pintor",
+  "Empleada domestica",
+  "Pedicurista"
 ];
 
 export default function HeroSearch() {
@@ -69,7 +73,7 @@ export default function HeroSearch() {
                       onClick={() => selectSearch(item)}
                       className="info-product"
                     >
-                      <div className="item_title">{item}</div>
+                      <div className="item_title" style={{cursor: 'pointer'}}>{item}</div>
                     </div>
                   </li>
                 ))}

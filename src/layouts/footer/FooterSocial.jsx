@@ -2,7 +2,7 @@ export default function FooterSocial() {
   return (
     <>
       <div className="social-widget">
-        <h5 className="text-white mb20">Follow Us</h5>
+        <h5 className="text-white mb20">Síguenos en</h5>
         <div className="social-style1">
           <a>
             <i className="fab fa-facebook-f list-inline-item" />

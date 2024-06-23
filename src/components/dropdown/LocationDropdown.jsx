@@ -46,7 +46,7 @@ export default function LocationDropdown() {
         }}
         className="done-btn ud-btn btn-thm drop_btn4"
       >
-        Apply
+        Aplicar
         <i className="fal fa-arrow-right-long" />
       </button>
     </>

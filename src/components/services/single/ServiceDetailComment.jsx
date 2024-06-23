@@ -50,7 +50,7 @@ export default function ServiceDetailComment({data}) {
 
   return (
     <>
-      <div className="bsp_reveiw_wrt mb20 mt60">
+      <div className="bsp_reveiw_wrt mb20 mt60 col-lg-8 col-md-10">
         <h6 className="fz17">Agrega una Reseña</h6>
         <p className="text">
           Su dirección de correo electrónico no será publicada. Los campos obligatorios están marcados <span style={{ color: 'red' }}>*</span>

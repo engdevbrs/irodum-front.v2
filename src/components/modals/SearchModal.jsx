@@ -31,7 +31,7 @@ export default function SearchModal() {
                   <input
                     type="text"
                     className="form-control border-0"
-                    placeholder="Cual servicio estás buscando hoy?"
+                    placeholder="Cuál servicio estás buscando hoy?"
                   />
                   <label>
                     <span className="far fa-magnifying-glass" />

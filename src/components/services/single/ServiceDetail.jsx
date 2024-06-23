@@ -8,6 +8,7 @@ import ServiceContactWidget from "./ServiceContactWidget";
 import ServiceDetailComment from "./ServiceDetailComment";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import ServiceRequest from "../../modals/ServiceRequest";
 
 export default function ServiceDetail(props) {
 
@@ -17,7 +18,7 @@ export default function ServiceDetail(props) {
   const [getSelect, setSelect] = useState([]);
   const [getReviewsData, setReviewsData] = useState([]);
 
-  let { extraServices, infoAboutService} = props.infoservice
+  let { extraServices, infoAboutService, idUser,nameUser} = props.infoservice
   infoAboutService = JSON.parse(infoAboutService)
   extraServices = JSON.parse(extraServices)
 
@@ -53,7 +54,7 @@ export default function ServiceDetail(props) {
         <section className="pt10 pb90 pb30-md">
           <div className="container">
             <div className="row wrap">
-              <div className="col-lg-8">
+              <div className="col-lg-8 col-md-10">
                 <div className="column">
                   <ServiceDetailSlider data={infoAboutService} imgs={props.infoservice.imageServices}/>
                   <div className="service-about">
@@ -126,6 +127,7 @@ export default function ServiceDetail(props) {
               <ServiceDetailComment data={props.infoservice}/>
             </div>
           </div>
+          <ServiceRequest data={[{id, idUser , nameUser}]} />
         </section>
       </StickyContainer>
     </>

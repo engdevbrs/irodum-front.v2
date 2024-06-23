@@ -60,13 +60,13 @@ export default function ServiceDetailSlider(props) {
               </div>
               <div className="details">
                 <h5 className="title">Ubicación</h5>
-                <p className="mb-0 text">{`${data.region},${data.city},${data.commune}`}</p>
+                <p className="mb-0 text">{`${data.city},${data.commune}`}</p>
               </div>
             </div>
           </div>
         </div>
         <div className="service-single-sldier vam_nav_style slider-1-grid owl-carousel owl-theme mb60 owl-loaded owl-drag">
-          <div className="thumb p50 p30-sm">
+          <div className="thumb">
             {showSwiper && (
               <Swiper
                 loop={true}
@@ -88,10 +88,10 @@ export default function ServiceDetailSlider(props) {
                   <SwiperSlide key={i}>
                     <img
                       height={554}
-                      width={929}
+                      width={554}
                       src={`https://www.services.irodum.com/`+item.originalname}
                       alt="gallery"
-                      className="w-100 h-auto"
+                      className="w-100"
                     />
                   </SwiperSlide>
                 ))}
